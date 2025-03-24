@@ -2,6 +2,12 @@
 
 A high-performance Rust implementation of a conversational speech model based on the LLaMA architecture. This project enables real-time audio processing and generation, making it ideal for applications requiring natural, context-aware speech interactions.
 
+## Inspiration
+
+This project is inspired by [Sesame](https://www.sesame.com/), who are pioneering the development of lifelike computer companions through natural voice interactions. Their work on crossing the uncanny valley of conversational voice has been particularly influential in shaping this implementation.
+
+You can try their research demo at [Sesame's website](https://www.sesame.com/) to experience their vision of natural voice companions.
+
 ## Why Use CSM?
 
 1. **Performance & Efficiency**
@@ -125,7 +131,13 @@ MIT License - see LICENSE file for details
 
 ## Acknowledgments
 
+- [Sesame](https://www.sesame.com/) for their groundbreaking work in natural voice companions
 - LLaMA model architecture by Meta AI
 - PyTorch and tch-rs teams for the excellent tensor library
 - Rust community for the amazing ecosystem
 - Contributors and maintainers of all dependencies
+
+## Related Projects
+
+- [Sesame Research](https://www.sesame.com/research) - Original research on natural voice companions
+- [Sesame Demo](https://www.sesame.com/demo) - Interactive demo of their voice technology
