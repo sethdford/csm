@@ -1,6 +1,35 @@
 # CSM (Conversational Speech Model)
 
-A Rust implementation of a conversational speech model based on the LLaMA architecture. This project provides tools for processing audio input, generating speech responses, and managing model weights.
+A high-performance Rust implementation of a conversational speech model based on the LLaMA architecture. This project enables real-time audio processing and generation, making it ideal for applications requiring natural, context-aware speech interactions.
+
+## Why Use CSM?
+
+1. **Performance & Efficiency**
+   - Written in Rust for maximum performance and memory safety
+   - Leverages `tch-rs` for efficient tensor operations
+   - Supports both CPU and GPU acceleration
+   - Zero-cost abstractions and minimal runtime overhead
+
+2. **Audio Processing Capabilities**
+   - Real-time audio input/output processing
+   - Multi-codebook audio tokenization for rich speech representation
+   - High-quality WAV file support
+   - Configurable audio parameters (sample rate, channels, bit depth)
+
+3. **Advanced Model Architecture**
+   - Based on the proven LLaMA transformer architecture
+   - Multi-head attention with key-value caching
+   - Rotary positional embeddings for better sequence modeling
+   - Layer normalization and residual connections
+   - Configurable model size and parameters
+
+4. **Use Cases**
+   - Voice assistants and chatbots
+   - Real-time speech-to-speech translation
+   - Audio content generation
+   - Speech style transfer
+   - Conversational AI applications
+   - Audio data augmentation
 
 ## Features
 
@@ -9,6 +38,9 @@ A Rust implementation of a conversational speech model based on the LLaMA archit
 - Token-based audio generation
 - Configurable model parameters
 - CPU/GPU support via tch-rs
+- Efficient memory management
+- Thread-safe design
+- Comprehensive error handling
 
 ## Prerequisites
 
@@ -20,7 +52,7 @@ A Rust implementation of a conversational speech model based on the LLaMA archit
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/csm.git
+git clone https://github.com/sethdford/csm.git
 cd csm
 ```
 
@@ -62,14 +94,22 @@ cargo run --bin csm -- -w models/llama-1B.pth -f llama-1B -i audio/conversationa
 ```
 src/
 ├── audio/         # Audio processing module
+│   └── mod.rs     # WAV handling and tokenization
 ├── models/        # Model implementations
+│   ├── mod.rs     # Model traits and common types
+│   └── llama.rs   # LLaMA model implementation
 ├── utils/         # Utility functions
+│   └── mod.rs     # Tensor operations and helpers
 └── main.rs        # Main program entry point
 ```
 
-## License
+## Performance Considerations
 
-MIT License - see LICENSE file for details
+- Uses efficient tensor operations with `tch-rs`
+- Implements streaming audio processing
+- Optimized memory usage with zero-copy operations
+- Supports batch processing for better throughput
+- Configurable model size for different performance requirements
 
 ## Contributing
 
@@ -78,3 +118,14 @@ MIT License - see LICENSE file for details
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+## License
+
+MIT License - see LICENSE file for details
+
+## Acknowledgments
+
+- LLaMA model architecture by Meta AI
+- PyTorch and tch-rs teams for the excellent tensor library
+- Rust community for the amazing ecosystem
+- Contributors and maintainers of all dependencies
