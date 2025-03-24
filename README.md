@@ -6,7 +6,55 @@ A high-performance Rust implementation of a conversational speech model based on
 
 This project is inspired by [Sesame](https://www.sesame.com/), who are pioneering the development of lifelike computer companions through natural voice interactions. Their work on crossing the uncanny valley of conversational voice has been particularly influential in shaping this implementation.
 
+### Technical Alignment with Sesame's Approach
+
+1. **Natural Voice Processing**
+   - Multi-codebook tokenization for rich speech representation
+   - Context-aware audio generation
+   - Real-time streaming capabilities
+   - High-fidelity audio output
+
+2. **Architecture Innovations**
+   - LLaMA-based transformer with optimized attention mechanisms
+   - Efficient key-value caching for faster inference
+   - Rotary positional embeddings for better sequence modeling
+   - Layer normalization and residual connections
+
+3. **Crossing the Uncanny Valley**
+   - Natural prosody and intonation modeling
+   - Contextual awareness in responses
+   - Emotional intelligence in voice generation
+   - Consistent personality across interactions
+
+4. **Performance Optimization**
+   - Zero-copy audio processing
+   - Efficient memory management
+   - GPU acceleration support
+   - Streaming inference capabilities
+
 You can try their research demo at [Sesame's website](https://www.sesame.com/) to experience their vision of natural voice companions.
+
+### Key Technical Differences
+
+While inspired by Sesame's work, this implementation offers several unique advantages:
+
+1. **Rust Implementation**
+   - Memory safety guarantees
+   - Zero-cost abstractions
+   - Thread-safe design
+   - Minimal runtime overhead
+
+2. **Modular Architecture**
+   - Pluggable model components
+   - Configurable audio processing
+   - Extensible tokenization system
+   - Customizable generation parameters
+
+3. **Development Focus**
+   - Open-source implementation
+   - Community-driven development
+   - Cross-platform support
+   - Easy integration capabilities
 
 ## Why Use CSM?
 
@@ -141,3 +189,12 @@ MIT License - see LICENSE file for details
 
 - [Sesame Research](https://www.sesame.com/research) - Original research on natural voice companions
 - [Sesame Demo](https://www.sesame.com/demo) - Interactive demo of their voice technology
+- [Sesame Team](https://www.sesame.com/team) - Meet the team behind the technology
+- [Sesame Careers](https://www.sesame.com/careers) - Join the team advancing voice technology
+
+### Additional Resources
+
+- [Sesame's Vision](https://www.sesame.com/) - Learn about their mission to make computers lifelike
+- [Research Papers](https://www.sesame.com/research) - Technical details about their approach
+- [Voice Technology Blog](https://www.sesame.com/blog) - Latest updates and insights
+- [Community Forum](https://www.sesame.com/community) - Connect with other developers
