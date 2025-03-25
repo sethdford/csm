@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSM Voice Chat</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSM Voice Chat</h1>
+            <p>Real-time voice conversation with Rust-powered CSM</p>
+        </header>
+        
+        <main>
+            <div class="visualizers">
+                <div class="visualizer-container">
+                    <h3>Input</h3>
+                    <canvas class="visualizer input-viz" id="inputViz"></canvas>
+                </div>
+                <div class="visualizer-container">
+                    <h3>Output</h3>
+                    <canvas class="visualizer output-viz" id="outputViz"></canvas>
+                </div>
+            </div>
+            
+            <button id="recordButton" class="record-button">
+                <span>Press to Talk</span>
+            </button>
+            
+            <div id="status" class="status">Ready</div>
+        </main>
+        
+        <footer>
+            <p>Powered by CSM - A Rust implementation inspired by Sesame</p>
+            <p>Inspired by <a href="https://github.com/Haadesx/realtime-voice-csm" target="_blank">Haadesx/realtime-voice-csm</a></p>
+        </footer>
+    </div>
+    
+    <script src="static/app.js"></script>
+</body>
+</html> 
